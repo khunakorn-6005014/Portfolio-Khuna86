@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import SocialBar from '../components/SocialBar';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,6 +30,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <SocialBar />
         {/* Header */}
         <header className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-md shadow-sm">
           <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
@@ -36,9 +38,11 @@ export default function RootLayout({
               <span className="text-xl font-semibold">Khunakorn W.</span>
             </Link>
             <div className="space-x-6">
-              <Link href="/about">About</Link>
-              <Link href="/projects">Projects</Link>
-              <Link href="/contact">Contact</Link>
+              <Link href="/about" className='button-70' role='button'>About</Link>
+              <Link href="/projects" className='button-70'role='button'>Projects</Link>
+              <Link href="/certificates">Certificates</Link>
+              <Link href="/resume">Resume</Link>
+              <Link href="/contact"className='button-70'role='button'>Contact</Link>
             </div>
           </nav>
         </header>

@@ -1,6 +1,6 @@
 // src/app/page.tsx
 import Link from 'next/link';
-
+import "./globals.css";
 export default function HomePage() {
   return (
     <section className="flex flex-col items-center justify-center min-h-[70vh] text-center">
@@ -14,11 +14,9 @@ export default function HomePage() {
       <p className="text-gray-500 dark:text-gray-400 mb-8">
         When I’m not coding, I’m out chasing Vancouver sunsets through my astrophotography lens.
       </p>
-      <Link
-        href="/projects"
-        className="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
-      >
-        View My Work
+      
+      <Link href="/projects" className='button-64' role='button'>
+        <span className='text'>View My Work</span>
       </Link>
     </section>
   );

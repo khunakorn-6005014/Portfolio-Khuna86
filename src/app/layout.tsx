@@ -38,11 +38,11 @@ export default function RootLayout({
               <span className="text-xl font-semibold">Khunakorn W.</span>
             </Link>
             <div className="space-x-6">
-              <Link href="/about" className='button-70' role='button'>About</Link>
-              <Link href="/projects" className='button-70'role='button'>Projects</Link>
-              <Link href="/certificates">Certificates</Link>
-              <Link href="/resume">Resume</Link>
-              <Link href="/contact"className='button-70'role='button'>Contact</Link>
+             <a><Link href="/about" className='button-70' role='button'>About</Link></a> 
+              <a><Link href="/projects" className='button-70'role='button'>Projects</Link></a> 
+              <a><Link href="/certificates">Certificates</Link></a> 
+               <a><Link href="/resume">Resume</Link></a>
+              <a><Link href="/contact"className='button-70'role='button'>Contact</Link></a> 
             </div>
           </nav>
         </header>

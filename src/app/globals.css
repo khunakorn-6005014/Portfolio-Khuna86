@@ -18,12 +18,34 @@
     --foreground: #ededed;
   }
 }
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+.space-x-6 a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 6px 16px;
+  text-decoration: none;
+  
+}
 
+/* Change color on hover */
+.space-x-6 a:hover {
+  background-color: #ddd;
+  color: black;
+  border-style: solid;
+  border-color: green;
+}
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .button-64 {
   align-items: center;
   background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
@@ -76,6 +98,12 @@ body {
   /* extra shadow or transform */
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
   transform: translateY(-2px);
+}
+@layer components {
+  object {
+    max-width: 100%;
+    border: none;
+  }
 }
 
 }

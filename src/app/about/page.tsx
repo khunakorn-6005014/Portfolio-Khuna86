@@ -50,7 +50,7 @@ export default function AboutPage() {
         <div>
           <h2 className="font-bold">Languages & Frameworks :</h2>
           <ul className="list-disc ml-5">
-            <li>Python, Java, SQL, Pandas</li>
+            <li>Python, JavaScipt, SQL, Rust, Pandas</li>
             <li>NumPy, Scikit-Learn, Matplotlib</li>
           </ul>
         </div>
